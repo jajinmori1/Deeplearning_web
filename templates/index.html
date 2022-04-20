@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DeepLearning_flask</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <h1 class="text-center">Apgar 점수 예측</h1>
+
+    <form action="/" , method="post">
+      <div class="form-group">
+        <label for="CSEC_DISTRESS">CSEC_DISTRESS</label>
+        <input
+          type="number"
+          class="form-control"
+          id="CSEC_DISTRESS"
+          placeholder="Enter CSEC_DISTRESS"
+          name="CSEC_DISTRESS"
+        />
+      </div>
+      <div class="form-group">
+        <label for="BABY_WEIGHT">BABY_WEIGHT</label>
+        <input
+          type="number"
+          class="form-control"
+          id="BABY_WEIGHT"
+          placeholder="Enter BABY_WEIGHT"
+          name="BABY_WEIGHT"
+        />
+      </div>
+      <div class="form-group">
+        <label for="임신말기정밀_AC">임신말기정밀_AC</label>
+        <input
+          type="number"
+          class="form-control"
+          id="임신말기정밀_AC"
+          placeholder="Enter 임신말기정밀_AC"
+          name="임신말기정밀_AC"
+        />
+      </div>
+      <div class="form-group">
+        <label for="임신말기정밀_AFI">임신말기정밀_AFI</label>
+        <input
+          type="number"
+          class="form-control"
+          id="임신말기정밀_AFI"
+          placeholder="Enter 임신말기정밀_AFI"
+          name="임신말기정밀_AFI"
+        />
+      </div>
+      <div class="form-group">
+        <label for="Cs_Ix_malpresentation">Cs_Ix_malpresentation</label>
+        <input
+          type="number"
+          class="form-control"
+          id="Cs_Ix_malpresentation"
+          placeholder="Enter Cs_Ix_malpresentation"
+          name="Cs_Ix_malpresentation"
+        />
+      </div>
+      <div class="form-group">
+        <label for="임신후기정밀_EBW">임신후기정밀_EBW</label>
+        <input
+          type="number"
+          class="form-control"
+          id="임신후기정밀_EBW"
+          placeholder="Enter 임신후기정밀_EBW"
+          name="임신후기정밀_EBW"
+        />
+      </div>
+      <div class="form-group">
+        <label for="HT_DEL">HT_DEL</label>
+        <input
+          type="number"
+          class="form-control"
+          id="HT_DEL"
+          placeholder="Enter HT_DEL"
+          name="HT_DEL"
+        />
+      </div>
+      <div class="form-group">
+        <label for="SBP">SBP</label>
+        <input
+          type="number"
+          class="form-control"
+          id="SBP"
+          placeholder="Enter SBP"
+          name="SBP"
+        />
+      </div>
+      <div class="form-group">
+        <label for="임신말기정밀_FL">임신말기정밀_FL</label>
+        <input
+          type="number"
+          class="form-control"
+          id="임신말기정밀_FL"
+          placeholder="Enter 임신말기정밀_FL"
+          name="임신말기정밀_FL"
+        />
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <p class="text-center">예상 아프가점수는 {{prediction}} 입니다.</p>
+  </body>
+</html>
